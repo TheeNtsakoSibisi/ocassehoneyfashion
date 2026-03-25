@@ -14,7 +14,43 @@
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+}
+
+.card, .product {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.btn {
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-weight: 600;
+}
+
+.navbar {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+</style>
 </head>
+
 <body>
 
 <div class="super_container">
@@ -37,14 +73,14 @@
 				<div class="search header_search">
 					<form action="#">
 						<input type="search" class="search_input" required="required">
-						<button type="submit" id="search_button" class="search_button"><img src="images/magnifying-glass.svg" alt=""></button>
+						<button type="submit" id="search_button" class="search_button"><img src="images/magnifying-glass.svg" alt="" class="img-fluid"></button>
 					</form>
 				</div>
 				<div class="shopping">
 					<!-- Cart -->
 					<a href="#">
 						<div class="cart">
-							<img src="images/shopping-bag.svg" alt="">
+							<img src="images/shopping-bag.svg" alt="" class="img-fluid">
 							<div class="cart_num_container">
 								<div class="cart_num_inner">
 									<div class="cart_num">1</div>
@@ -55,7 +91,7 @@
 					<!-- Star -->
 					<a href="#">
 						<div class="star">
-							<img src="images/star.svg" alt="">
+							<img src="images/star.svg" alt="" class="img-fluid">
 							<div class="star_num_container">
 								<div class="star_num_inner">
 									<div class="star_num">0</div>
@@ -66,7 +102,7 @@
 					<!-- Avatar -->
 					<a href="#">
 						<div class="avatar">
-							<img src="images/avatar.svg" alt="">
+							<img src="images/avatar.svg" alt="" class="img-fluid">
 						</div>
 					</a>
 				</div>
@@ -84,7 +120,7 @@
 		<div class="search">
 			<form action="#">
 				<input type="search" class="search_input menu_mm" required="required">
-				<button type="submit" id="search_button_menu" class="search_button menu_mm"><img class="menu_mm" src="images/magnifying-glass.svg" alt=""></button>
+				<button type="submit" id="search_button_menu" class="search_button menu_mm"><img class="menu_mm" src="images/magnifying-glass.svg" alt="" class="img-fluid"></button>
 			</form>
 		</div>
 		<nav class="menu_nav">
@@ -144,7 +180,7 @@
 			
 			<!-- Home Slider Nav -->
 
-			<div class="home_slider_next d-flex flex-column align-items-center justify-content-center"><img src="images/arrow_r.png" alt=""></div>
+			<div class="home_slider_next d-flex flex-column align-items-center justify-content-center"><img src="images/arrow_r.png" alt="" class="img-fluid"></div>
 
 			<!-- Home Slider Dots -->
 
@@ -184,7 +220,7 @@
 				<div class="col-lg-4 promo_col">
 					<div class="promo_item">
 						<div class="promo_image">
-							<img src="images/promo_1.jpg" alt="">
+							<img src="images/promo_1.jpg" alt="" class="img-fluid">
 							<div class="promo_content promo_content_1">
 								<!--<div class="promo_title">-30% off</div>-->
 								<div class="promo_subtitle">on all bags</div>
@@ -198,7 +234,7 @@
 				<div class="col-lg-4 promo_col">
 					<div class="promo_item">
 						<div class="promo_image">
-							<img src="images/promo_2.jpg" alt="">
+							<img src="images/promo_2.jpg" alt="" class="img-fluid">
 							<div class="promo_content promo_content_2">
 								<!--<div class="promo_title">-30% off</div>-->
 								<div class="promo_subtitle">coats & jackets</div>
@@ -212,7 +248,7 @@
 				<div class="col-lg-4 promo_col">
 					<div class="promo_item">
 						<div class="promo_image">
-							<img src="images/promo_3.jpg" alt="">
+							<img src="images/promo_3.jpg" alt="" class="img-fluid">
 							<div class="promo_content promo_content_3">
 								<!--<div class="promo_title">-25% off</div>-->
 								<div class="promo_subtitle">on Sandals</div>
@@ -244,7 +280,7 @@
 				<div class="col-lg-4 product_col">
 					<div class="product">
 						<div class="product_image">
-							<img src="images/product_1.jpg" alt="">
+							<img src="images/product_1.jpg" alt="" class="img-fluid">
 						</div>
 						<!--<div class="rating rating_4">
 							<i class="fa fa-star"></i>
@@ -259,7 +295,7 @@
 								<div class="product_price">R145.00</div>
 							</div>
 							<div class="product_options">
-								<div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
+								<div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt="" class="img-fluid"></div>
 								<div class="product_fav product_option">+</div>
 							</div>
 						</div>
@@ -270,7 +306,7 @@
 				<div class="col-lg-4 product_col">
 					<div class="product">
 						<div class="product_image">
-							<img src="images/product_2.jpg" alt="">
+							<img src="images/product_2.jpg" alt="" class="img-fluid">
 						</div>
 						<!--<div class="rating rating_4">
 							<i class="fa fa-star"></i>
@@ -285,7 +321,7 @@
 								<div class="product_price">R135.00</div>
 							</div>
 							<div class="product_options">
-								<div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
+								<div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt="" class="img-fluid"></div>
 								<div class="product_fav product_option">+</div>
 							</div>
 						</div>
@@ -296,7 +332,7 @@
 				<div class="col-lg-4 product_col">
 					<div class="product">
 						<div class="product_image">
-							<img src="images/product_3.jpg" alt="">
+							<img src="images/product_3.jpg" alt="" class="img-fluid">
 						</div>
 						<!--<div class="rating rating_4">
 							<i class="fa fa-star"></i>
@@ -311,7 +347,7 @@
 								<div class="product_price">R1145.00</div>
 							</div>
 							<div class="product_options">
-								<div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt=""></div>
+								<div class="product_buy product_option"><img src="images/shopping-bag-white.svg" alt="" class="img-fluid"></div>
 								<div class="product_fav product_option">+</div>
 							</div>
 						</div>
@@ -375,42 +411,42 @@
 				<!-- Gallery Item -->
 	<!--			<div class="owl-item gallery_item">
 					<a class="colorbox" href="images/gallery_1.jpg">
-						<img src="images/gallery_1.jpg" alt="">
+						<img src="images/gallery_1.jpg" alt="" class="img-fluid">
 					</a>
 				</div>
 
 				<!-- Gallery Item -->
 	<!--			<div class="owl-item gallery_item">
 					<a class="colorbox" href="images/gallery_2.jpg">
-						<img src="images/gallery_2.jpg" alt="">
+						<img src="images/gallery_2.jpg" alt="" class="img-fluid">
 					</a>
 				</div>
 
 				<!-- Gallery Item -->
 	<!--			<div class="owl-item gallery_item">
 					<a class="colorbox" href="images/gallery_3.jpg">
-						<img src="images/gallery_3.jpg" alt="">
+						<img src="images/gallery_3.jpg" alt="" class="img-fluid">
 					</a>
 				</div>
 
 				<!-- Gallery Item -->
 	<!--			<div class="owl-item gallery_item">
 					<a class="colorbox" href="images/gallery_4.jpg">
-						<img src="images/gallery_4.jpg" alt="">
+						<img src="images/gallery_4.jpg" alt="" class="img-fluid">
 					</a>
 				</div>
 
 				<!-- Gallery Item -->
 	<!--			<div class="owl-item gallery_item">
 					<a class="colorbox" href="images/gallery_5.jpg">
-						<img src="images/gallery_5.jpg" alt="">
+						<img src="images/gallery_5.jpg" alt="" class="img-fluid">
 					</a>
 				</div>
 
 				<!-- Gallery Item -->
 	<!--			<div class="owl-item gallery_item">
 					<a class="colorbox" href="images/gallery_6.jpg">
-						<img src="images/gallery_6.jpg" alt="">
+						<img src="images/gallery_6.jpg" alt="" class="img-fluid">
 					</a>
 				</div>
 
@@ -440,7 +476,7 @@
 		<!--				<div class="owl-item">
 							<div class="test_text">“Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra nec. Fusce vel lorem libero. Integer ex mi, facilisis sed nisi ut, vestibulum ultrices nulla. Aliquam egestas tempor leo.”</div>
 							<div class="test_content">
-								<div class="test_image"><img src="images/testimonials.jpg" alt=""></div>
+								<div class="test_image"><img src="images/testimonials.jpg" alt="" class="img-fluid"></div>
 								<div class="test_name">Christinne Smith</div>
 								<div class="test_title">client</div>
 							</div>
@@ -450,7 +486,7 @@
 		<!--				<div class="owl-item">
 							<div class="test_text">“Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra nec. Fusce vel lorem libero. Integer ex mi, facilisis sed nisi ut, vestibulum ultrices nulla. Aliquam egestas tempor leo.”</div>
 							<div class="test_content">
-								<div class="test_image"><img src="images/testimonials.jpg" alt=""></div>
+								<div class="test_image"><img src="images/testimonials.jpg" alt="" class="img-fluid"></div>
 								<div class="test_name">Christinne Smith</div>
 								<div class="test_title">client</div>
 							</div>
@@ -460,7 +496,7 @@
 		<!--				<div class="owl-item">
 							<div class="test_text">“Integer ut imperdiet erat. Quisque ultricies lectus tellus, eu tristique magna pharetra nec. Fusce vel lorem libero. Integer ex mi, facilisis sed nisi ut, vestibulum ultrices nulla. Aliquam egestas tempor leo.”</div>
 							<div class="test_content">
-								<div class="test_image"><img src="images/testimonials.jpg" alt=""></div>
+								<div class="test_image"><img src="images/testimonials.jpg" alt="" class="img-fluid"></div>
 								<div class="test_name">Christinne Smith</div>
 								<div class="test_title">client</div>
 							</div>
